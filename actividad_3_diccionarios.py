@@ -181,34 +181,213 @@ TOTAL DE SU INVENTARIO (CANTIDAD KG): {total_diccionario_cantidad} kg
 
 #-CREAR UNA LISTA CON 5 PRECIOS PEDIR AL USUARIO UN DESCUENTO Y APLICARLO A TODOS LOS PRECIOS 
 
-lista_precios= [5000,10000]
+precios = float(input("Precio 1: "))
+
+
+precios_2 = float(input("Precio 2: "))
+
+
+precios_3 = float(input("Precio 3: "))
+
+
+precios_4 = float(input("Precio 4: "))
+
+
+precios_5 = float(input("Precio 5: "))
+
+
+precios = [precios, precios_2, precios_3, precios_4, precios_5]
+
+descuento= float(input("Descuento: ")) 
+
+
+descuento_1 = precios - (precios * descuento / 100)
+descuento_2 = precios_2 - (precios_2 * descuento / 100)
+descuento_3 = precios_3 - (precios_3 * descuento / 100)
+descuento_4 = precios_4 - (precios_4 * descuento / 100)
+descuento_5= precios_5 - (precios_5 * descuento / 100)
+
+
+precios_descuento= [descuento_1, descuento_2, descuento_3, descuento_4, descuento_5]
+
+
+print("Precios con descuento:", precios_descuento)
+
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 9--------------------------------------------------------------#
+
+
+#- CREAR UN TUPLA CON 5 NOTAS Y BUSCAR NOTA MAXIMA Y MINIMA
+
+notas = (float(input("Ingresa primera nota: ")), float(input("Ingresa segunda nota: ")), float(input("Ingresa tercera nota: ")), float(input("Ingresa la cuarta nota:")))
+
+
+print("Máxima:", max(notas), "Mínima:", min(notas))
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 10--------------------------------------------------------------#
+
+#-CONVERSION DE METROS 
+
+conv = {"km": 1000, "m": 1, "cm": 0.01}
+
+
+unidad = input("Unidad (km/m/cm): ")
+
+
+valor = float(input("Cantidad: "))
+
+
+print("En metros es:", valor * conv[unidad])
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 11--------------------------------------------------------------#
+
+#-PEDIR AL USUARIO 3 PRECIOS Y PASARLO A LISTAS LUEGO CREAR UNA LISTA CON EL PRECIO CON EL 19% DEL IVA (2 LISTAS)
+precios_1_1 = float(input("Ingrese el primer precio: "))
+
+
+precios_1_2 = float(input("Ingrese el segundo precio: "))
+
+
+precios_1_3 = float(input("Ingrese el tercer precio: "))
+
+
+precios_1_4 = [precios_1_1, precios_1_2, precios_1_3]
+
+
+precio_iva_1 = precios_1_1 * 1.19
+
+
+precio_iva_2 = precios_1_2 * 1.19
+
+
+precio_iva_3 = precios_1_3 * 1.19
+
+
+precios_con_iva = [precio_iva_1, precio_iva_2, precio_iva_3]
+
+
+print("Precios con IVA del 19%:", precios_con_iva)
 
 
 
 
 
 
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 12--------------------------------------------------------------#
+
+#-PEDIR 2 NUMEROS HACER TUPLAS CON OPERACIONES Y IMPRIMIRLAS 
+
+pedido_numero = float(input("Ingrese un numero: "))
+
+
+pedido_numero_1 = float(input("Ingrese otro numero: "))
+
+
+tupla_suma= (pedido_numero + pedido_numero_1)
+
+
+tupla_resta= (pedido_numero - pedido_numero_1)
+
+
+tupla_multiplicacion= (pedido_numero * pedido_numero_1)
+
+
+tupla_divicion= (pedido_numero / pedido_numero_1)
+
+
+print(f"""
+      Sus operacion estan hechas los resultados son:
+      SUMA: {tupla_suma}
+      RESTA: {tupla_resta}
+      MULTIPLICACION: {tupla_multiplicacion}
+      DIVISION: {tupla_divicion}""")
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 13--------------------------------------------------------------#
+
+#-CREAR DICCIONARIO CON 3 ESTUDIANTES Y SUS NOTAS HALLAR EL PROMEDIO 
+nombre1 = input("Nombre del estudiante 1: ")
+
+
+nota1 = float(input("Nota de " + nombre1 + ": "))
+
+nombre2 = input("Nombre del estudiante 2: ")
+
+
+nota2 = float(input("Nota de " + nombre2 + ": "))
+
+nombre3 = input("Nombre del estudiante 3: ")
+
+
+nota3 = float(input("Nota de " + nombre3 + ": "))
+
+
+estudiantes = {
+    nombre1: nota1,
+    nombre2: nota2,
+    nombre3: nota3
+}
+
+
+promedio = (nota1 + nota2 + nota3) / 3
+
+
+print("Notas registradas:", estudiantes)
+
+
+print("Promedio general:", promedio)
 
 
 
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 14--------------------------------------------------------------#
 
 
 
+#-CALCULAR DICCIONARIO EL PRECIO 
+
+prod1 = input("Ingrese nombre del producto: ")
+
+
+precio1 = float(input("Ingrese valor del producto: "))
+
+
+prod2 = input("Ingrese nombre del producto 2: ")
+
+
+precio2 = float(input("Ingrese valor del producto 2: "))
 
 
 
+pedir_aumento= float(input("Porcentaje de impuesto que quiere agregar: "))
+
+
+lista=(precio1, precio2)
+
+porcentaje_de_aumento_1= lista[0]*pedir_aumento / 100
+
+
+porcentaje_de_aumento_2= lista[1]*pedir_aumento / 100
+
+
+lista_2_impuesto= [porcentaje_de_aumento_1, porcentaje_de_aumento_2]
+
+suma_1= precio1 + porcentaje_de_aumento_1
+
+
+suma_2= precio2 + porcentaje_de_aumento_2
 
 
 
+suma= precio1 + precio2 +  porcentaje_de_aumento_1 + porcentaje_de_aumento_2
 
-
-
-
-
-
-
-
-
+print(f"""""
+      La conversion de su impuesto esta completa y quedaria asi:
+      PRECIO1 CON IMPUESTOS: {suma_1}
+      PRECIO2 CON IMPUESTOS: {suma_2}
+      SUMA DE PRECIOS CON IMPUESTOS: {suma}
+      PRODUCTOS SON: {prod1}, {prod2}""")
 
 
 
