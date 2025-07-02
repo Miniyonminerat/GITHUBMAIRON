@@ -347,6 +347,58 @@ print("Promedio general:", promedio)
 
 #-CALCULAR DICCIONARIO EL PRECIO 
 
+
+
+s1 = float(input("Ingrese el salario 1: "))
+
+
+s2 = float(input("Ingrese el salario 2: "))
+
+
+s3 = float(input("Ingrese el salario 3: "))
+
+
+s4 = float(input("Ingrese el salario 4: "))
+
+
+s5 = float(input("Ingrese el salario 5: "))
+
+
+salarios = [s1, s2, s3, s4, s5]
+
+
+s1_a = s1 * 1.10
+
+
+s2_a = s2 * 1.10
+
+
+s3_a = s3 * 1.10
+
+
+s4_a = s4 * 1.10
+
+
+s5_a = s5 * 1.10
+
+
+salarios_aumentados = [s1_a, s2_a, s3_a, s4_a, s5_a]
+
+
+print("Salarios originales:", salarios)
+print("Salarios con aumento del 10%:", salarios_aumentados)
+
+
+
+
+
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 15--------------------------------------------------------------#
+
+
+
+
 prod1 = input("Ingrese nombre del producto: ")
 
 
