@@ -349,40 +349,40 @@ print("Promedio general:", promedio)
 
 
 
-s1 = float(input("Ingrese el salario 1: "))
+salario1 = float(input("Ingrese el salario 1: "))
 
 
-s2 = float(input("Ingrese el salario 2: "))
+salario2 = float(input("Ingrese el salario 2: "))
 
 
-s3 = float(input("Ingrese el salario 3: "))
+salario3 = float(input("Ingrese el salario 3: "))
 
 
-s4 = float(input("Ingrese el salario 4: "))
+salario4 = float(input("Ingrese el salario 4: "))
 
 
-s5 = float(input("Ingrese el salario 5: "))
+salario5 = float(input("Ingrese el salario 5: "))
 
 
 salarios = [s1, s2, s3, s4, s5]
 
 
-s1_a = s1 * 1.10
+salario1_a = s1 * 1.10
 
 
-s2_a = s2 * 1.10
+salario2_a = s2 * 1.10
 
 
-s3_a = s3 * 1.10
+salario3_a = s3 * 1.10
 
 
-s4_a = s4 * 1.10
+salario4_a = s4 * 1.10
 
 
-s5_a = s5 * 1.10
+salario5_a = s5 * 1.10
 
 
-salarios_aumentados = [s1_a, s2_a, s3_a, s4_a, s5_a]
+salarios_aumentados = [salario1_a, salario2_a, salario3_a, salario4_a, salario5_a]
 
 
 print("Salarios originales:", salarios)
@@ -399,13 +399,13 @@ print("Salarios con aumento del 10%:", salarios_aumentados)
 
 
 
-prod1 = input("Ingrese nombre del producto: ")
+product1 = input("Ingrese nombre del producto: ")
 
 
 precio1 = float(input("Ingrese valor del producto: "))
 
 
-prod2 = input("Ingrese nombre del producto 2: ")
+product2 = input("Ingrese nombre del producto 2: ")
 
 
 precio2 = float(input("Ingrese valor del producto 2: "))
@@ -439,22 +439,306 @@ print(f"""""
       PRECIO1 CON IMPUESTOS: {suma_1}
       PRECIO2 CON IMPUESTOS: {suma_2}
       SUMA DE PRECIOS CON IMPUESTOS: {suma}
-      PRODUCTOS SON: {prod1}, {prod2}""")
+      PRODUCTOS SON: {product1}, {product2}""")
+
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 16--------------------------------------------------------------#
+
+#-PEDIR AL USUARIO 5 EDADES METERLAS EN UNA LISTA Y MIRAR CUALES SON MAYORES DE EDAD Y CUALES SON MENORES DE EDAD
+
+
+edad_1_2= int(input("Ingrese edad 1: "))
+
+
+edad_1_3= int(input("Ingrese edad 2: "))
+
+
+edad_1_4= int(input("Ingrese edad 3: "))
+
+
+edad_1_5= int(input("Ingrese edad 4: "))
+
+
+edad_1_6= int(input("Ingrese edad 5: "))
+
+
+lista_de_edades= [edad_1_2, edad_1_3, edad_1_4, edad_1_5, edad_1_6]
+
+
+mayores= (edad_1_2 >= 18) + (edad_1_3 >= 18) + (edad_1_4 >=18) + (edad_1_5 >= 18) + (edad_1_6 >= 18)
+
+menores = 5 - mayores
+
+
+print(f"las personas mayores de edad son {mayores} y las que son menores de edad son {menores}")
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 17--------------------------------------------------------------#
+
+#-CONVERSION DE MONEDA PEDIR AL USUARIO QUE INGRESE LA CONVERSION O CANTIDAD DE DOLARES QUE QUIERA CONVERTIR HACE LA OPERACION CON LA TASACION POR DOLAR QUE DA EN CADA UNO EJM PESOS 1 DOLAR ES 3900 Y SI MULTIPLICA
+
+hallar_dinero_usd= float(input("Ingresa los dolares que quieres pasar a otra moneda: "))
+
+euros= hallar_dinero_usd * 0.85
+
+
+pesos= hallar_dinero_usd * 3900
+
+
+yenes= hallar_dinero_usd * 110
+
+print(f"""
+      En euros quedaria en: {euros}
+      En pesos quedaria en: {pesos}
+      En yenes quedaria en: {yenes}  """)
+
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 18--------------------------------------------------------------#
+
+#- DICCIONARIO DE VENTA
+
+
+producto_venta_1= input("Ingrese el nombre del producto 1 vendido: ")
+
+
+valor_venta_1= float(input("Ingrese el valor del producto_1 vendido: "))
+
+
+cantidad_venta_1= float(input("Ingrese cantidad llevada (KG): "))
+
+
+
+producto_venta_2= input("Ingrese el nombre del producto_2 vendido: ")
+
+
+valor_venta_2= float(input("Ingrese el valor del producto_2 vendido: "))
+
+
+cantidad_venta_2= float(input("Ingrese cantidad llevada (KG): "))
+
+
+
+producto_venta_3= input("Ingrese el nombre del producto_3 vendido: ")
+
+
+valor_venta_3= float(input("Ingrese el valor del producto_3 vendido: "))
+
+
+cantidad_venta_3= float(input("Ingrese cantidad llevada (KG): "))
+
+
+
+total_valor_1= valor_venta_1 * cantidad_venta_1
+
+total_valor_2= valor_venta_2 * cantidad_venta_2
+
+total_valor_3= valor_venta_3 * cantidad_venta_3
+
+
+
+diccionario_ventas= {
+
+        producto_venta_1: total_valor_1,
+
+        producto_venta_2: total_valor_2,
+
+        producto_venta_3: total_valor_3
+
+}
+
+
+print(f"""
+      El diccionario de ventas esta terminado esta es las ventas que se hicieron en el mes: 
+      
+      {diccionario_ventas}""")
+
+
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 19--------------------------------------------------------------#
+
+#-TEMPERATURAS RE DIFICILES Y LARGOS :V
+
+
+
+temperatura_1_1= float(input("Ingrese primera temperatura"))
+
+
+temperatura_1_2= float(input("Ingrese segunda temperatura: "))
+
+
+temperatura_1_3= float(input("Ingrese tercera temperatura: "))
+
+
+temperatura_1_4= float(input("Ingrese cuarta temperatura: "))
+
+
+temperatura_1_5= float(input("Ingrese quinta temperatura: "))
+
+
+temperatura_1_6= float(input("Ingrese sexta temperatura: "))
+
+
+temperatura_1_7= float(input("Ingrese septima temperatura: "))
+
+
+temperatura_1_8= float(input("Ingrese octava temperatura: "))
+
+
+temperatura_1_9= float(input("Ingrese novena temperatura: "))
+
+
+temperatura_1_10= float(input("Ingrese decima temperatura: "))
+
+
+lista_temperaturas= [temperatura_1_1, temperatura_1_2, temperatura_1_3, temperatura_1_4, temperatura_1_5, temperatura_1_6, temperatura_1_7, temperatura_1_8, temperatura_1_9, temperatura_1_10]
+
+
+
+
+mayores_30 = [
+    temperatura_1_1 * (temperatura_1_1 > 30), temperatura_1_2 * (temperatura_1_2 > 30),
+
+
+    temperatura_1_3 * (temperatura_1_3 > 30), temperatura_1_4 * (temperatura_1_4 > 30),
+
+
+    temperatura_1_5 * (temperatura_1_5 > 30), temperatura_1_6 * (temperatura_1_6 > 30),
+
+
+    temperatura_1_7 * (temperatura_1_7 > 30), temperatura_1_8 * (temperatura_1_8 > 30),
+
+
+    temperatura_1_9 * (temperatura_1_9 > 30), temperatura_1_10 * (temperatura_1_10 > 30)
+]
+
+
+menores_10 = [
+    temperatura_1_1 * (temperatura_1_1 < 10), temperatura_1_2 * (temperatura_1_2 < 10),
+
+
+    temperatura_1_3 * (temperatura_1_3 < 10), temperatura_1_4 * (temperatura_1_4 < 10),
+
+
+    temperatura_1_5 * (temperatura_1_5 < 10), temperatura_1_6 * (temperatura_1_6 < 10),
+
+
+    temperatura_1_7 * (temperatura_1_7 < 10), temperatura_1_8 * (temperatura_1_8 < 10),
+
+
+    temperatura_1_9 * (temperatura_1_9 < 10), temperatura_1_10 * (temperatura_1_10 < 10)
+]
+
+
+print("Temperaturas mayores a 30:")
+
+
+print(temperatura_1_1 * (temperatura_1_1 > 30))
+
+
+print(temperatura_1_2 * (temperatura_1_2 > 30))
+
+
+print(temperatura_1_3 * (temperatura_1_3 > 30))
+
+
+print(temperatura_1_4 * (temperatura_1_4 > 30))
+
+
+print(temperatura_1_5 * (temperatura_1_5 > 30))
+
+
+print(temperatura_1_6 * (temperatura_1_6 > 30))
+
+
+print(temperatura_1_7 * (temperatura_1_7 > 30))
+
+
+print(temperatura_1_8 * (temperatura_1_8 > 30))
+
+
+print(temperatura_1_9 * (temperatura_1_9 > 30))
+
+
+print(temperatura_1_10 * (temperatura_1_10 > 30))
+
+
+
+print("Temperaturas menores a 10:")
+
+
+print(temperatura_1_1 * (temperatura_1_1 < 10))
+
+
+print(temperatura_1_2 * (temperatura_1_2 < 10))
+
+
+print(temperatura_1_3 * (temperatura_1_3 < 10))
+
+
+print(temperatura_1_4 * (temperatura_1_4 < 10))
+
+
+print(temperatura_1_5 * (temperatura_1_5 < 10))
+
+
+print(temperatura_1_6 * (temperatura_1_6 < 10))
+
+
+print(temperatura_1_7 * (temperatura_1_7 < 10))
+
+
+print(temperatura_1_8 * (temperatura_1_8 < 10))
+
+
+print(temperatura_1_9 * (temperatura_1_9 < 10))
 
 
 
 
 
+#------------------------------------------------------------------EJERCICIO DICCIONARIOS 20--------------------------------------------------------------#
+
+
+#-ORGANIZAR EN UNA LISTA DE MENOR A MAYOR 
 
 
 
 
+valor_precio1 = float(input("Ingrese el precio 1: "))
+
+
+valor_precio2 = float(input("Ingrese el precio 2: "))
+
+
+valor_precio3 = float(input("Ingrese el precio 3: "))
+
+
+valor_precio4 = float(input("Ingrese el precio 4: "))
+
+
+valor_precio5 = float(input("Ingrese el precio 5: "))
 
 
 
+LISTA_PRECIOS_5= [valor_precio1, valor_precio2, valor_precio3, valor_precio4, valor_precio5]
 
 
+eliminar_precios= float(input("¿Que precio quiere usted eliminar?: "))
 
+LISTA_PRECIOS_5.remove(eliminar_precios)
+
+
+nuevo_precios= float(input("¿Que valor quiere agregar usted?: "))
+
+LISTA_PRECIOS_5.append(nuevo_precios)
+
+LISTA_PRECIOS_5.sort()
+
+
+print(f"""La lista esta completada y ordenada de menor a mayor quedo asi: 
+      
+      {LISTA_PRECIOS_5}""")
 
 
 
