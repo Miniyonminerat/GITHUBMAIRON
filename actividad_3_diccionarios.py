@@ -364,22 +364,22 @@ salario4 = float(input("Ingrese el salario 4: "))
 salario5 = float(input("Ingrese el salario 5: "))
 
 
-salarios = [s1, s2, s3, s4, s5]
+salarios = [salario1, salario2, salario3, salario4, salario5]
 
 
-salario1_a = s1 * 1.10
+salario1_a = salario1 * 1.10
 
 
-salario2_a = s2 * 1.10
+salario2_a = salario2 * 1.10
 
 
-salario3_a = s3 * 1.10
+salario3_a = salario3 * 1.10
 
 
-salario4_a = s4 * 1.10
+salario4_a = salario4 * 1.10
 
 
-salario5_a = s5 * 1.10
+salario5_a = salario5 * 1.10
 
 
 salarios_aumentados = [salario1_a, salario2_a, salario3_a, salario4_a, salario5_a]
